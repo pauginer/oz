@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>example.ep</title>
+		<script src="../libs/jquery.js"></script>
+		<script src="../oz.js" data-remote="oz.json" data-delay="6000"></script>
+		<script type="text/javascript" src="Resources/Script.js">
+			//
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="content">
+				<div class="Page" id="inicial_page">
+					<div class="Image"><img width="316" height="492" src="pages/inicial.png" usemap="#map_inicial" id="inicial_page_image" />
+						<div class="ImageFooter">
+							 
+						</div>
+						<map name="map_inicial">
+							<area shape="rect" coords="19,432,290,480" href="#tarde_page" />
+							<area shape="rect" coords="277,7,309,39" href="#buscar_page" />
+						</map>
+					</div>
+				</div>
+				<div class="Page" id="base_page">
+					<div class="Image"><img width="316" height="492" src="pages/base.png" usemap="#map_base" id="base_page_image" />
+						<div class="ImageFooter">
+							 
+						</div>
+					</div>
+				</div>
+				<div class="Page" id="buscar_page">
+					<div class="Image"><img width="316" height="492" src="pages/buscar.png" usemap="#map_buscar" id="buscar_page_image" />
+						<div class="ImageFooter">
+							 
+						</div>
+						<map name="map_buscar">
+							<area shape="rect" coords="-4,-2,54,46" href="#inicial_page" />
+							<area shape="rect" coords="-4,296,316,501" href="#buscarsteve_page" />
+						</map>
+					</div>
+				</div>
+				<div class="Page" id="tarde_page">
+					<div class="Image"><img width="316" height="492" src="pages/tarde.png" usemap="#map_tarde" id="tarde_page_image" />
+						<div class="ImageFooter">
+							 
+						</div>
+						<map name="map_tarde">
+							<area shape="rect" coords="19,432,290,480" href="#inicial_page" />
+							<area shape="rect" coords="19,432,290,480" href="#tarde_page" />
+							<area shape="rect" coords="277,7,309,39" href="#buscar_page" />
+						</map>
+					</div>
+				</div>
+				<div class="Page" id="buscarsteve_page">
+					<div class="Image"><img width="316" height="492" src="pages/buscarsteve.png" usemap="#map_buscarsteve" id="buscarsteve_page_image" />
+						<div class="ImageFooter">
+							 
+						</div>
+						<map name="map_buscarsteve">
+							<area shape="rect" coords="-4,-2,54,46" href="#inicial_page" />
+						</map>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
